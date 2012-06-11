@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.046" errors="0" skipped="0" tests="1" name="edu.wctc.jms.demo1.jmsconsumer.AppTest">
+<testsuite failures="0" time="0.051" errors="0" skipped="0" tests="1" name="edu.wctc.jms.demo1.jmsconsumer.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/jlombardo/Documents/clients/guardian/jmsconsumer"/>
+    <property name="user.dir" value="/Users/jlombardo/NetBeansProjects/jmsconsumer"/>
     <property name="java.runtime.version" value="1.7.0_04-b21"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -61,5 +61,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.007" classname="edu.wctc.jms.demo1.jmsconsumer.AppTest" name="testApp"/>
+  <testcase time="0.006" classname="edu.wctc.jms.demo1.jmsconsumer.AppTest" name="testApp"/>
 </testsuite>

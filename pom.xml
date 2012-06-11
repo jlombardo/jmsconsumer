@@ -25,6 +25,47 @@
         <slf4j.version>1.6.1</slf4j.version>
         <logback.version>1.0.3</logback.version>
     </properties>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <id>create-executable-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptorRefs>
+                                <descriptorRef>
+                                    jar-with-dependencies
+                                </descriptorRef>
+                            </descriptorRefs>
+                            <archive>
+                                <manifest>
+	                            <mainClass>edu.wctc.jms.demo1.jmsconsumer.ConsumerApp</mainClass>
+	                            <addClasspath>true</addClasspath>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>    
 
     <dependencies>
         <dependency>
@@ -32,6 +73,12 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>date4j</groupId>
+            <artifactId>date4j</artifactId>
+            <version>1.2.0</version>
         </dependency>
         
         <dependency>
@@ -172,4 +219,11 @@
             <version>5.6.0</version>
         </dependency>
     </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>clojars.org</id>
+            <url>http://clojars.org/repo</url>
+        </repository>
+    </repositories>
 </project>
